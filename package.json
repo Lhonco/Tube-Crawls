@@ -1,0 +1,24 @@
+{
+  "name": "Tube-Map",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "## Tuesday In this session you will set up your own environment for server-side code.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DE1-Computing-2/week-5-tuesday-Lhonco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DE1-Computing-2/week-5-tuesday-Lhonco/issues"
+  },
+  "homepage": "https://github.com/DE1-Computing-2/week-5-tuesday-Lhonco#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
