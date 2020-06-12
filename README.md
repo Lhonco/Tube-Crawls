@@ -4,9 +4,10 @@
 - [ ] User can calculate different pub crawl routes with different options
     - [ ] Choose starting point
     - [ ] Duration
-    - [ ] Price (cheap, medium, expensive)
+    - [ ] Price (cheap, medium, expensive) (max price input)
     - [ ] Allow skipping stations or not
     - [ ] Allow changing to different line
+    - [ ] Toggle to include only night tube
 - [ ] Click on station shows more information about pub and pint
     - [ ] fetched from Wikipedia, OpenStreetMap
     - [ ] Name of Pub
