@@ -24,6 +24,6 @@
     - [ ] Rent
     - [ ] Most used hashtags
 
-Progress
+## Progress
 - Defined brief and wrote README
 - Set up all the initial configuration, based on Freddie's server
