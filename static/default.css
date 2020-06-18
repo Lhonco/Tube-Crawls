@@ -1,53 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Poiret+One&display=swap');
+
 /* Browser reset */
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* Reset so 1 rem = 10 px */
 }
 
 body {
     width: 100%;
     height: 100%;
     position: absolute;
+    font-size: 1.6rem;
+    font-family: 'Muli';
+    color: white;
     overflow: hidden;
 }
 
 nav {
-    width: 25%;
-    height: 100%;
+    width: 40rem;
+    max-width: 40%; /* Don't let it get too big when zoomed in */
     position: absolute;
-    background-color: aquamarine;
     z-index: 1;
-}
-
-main {
-    width: 75%;
+    margin-left: 2rem;
     height: 100%;
-    right: 0;
-    position: absolute;
 }
-
-/* main:hover {
-    
-} */
 
 input[type="range"] {
     transform: rotate(-90deg);
     z-index: 1;
-    position: absolute;
+    /* position: absolute; */
     height: 5%;
-    left: -5%;
-    top: 5%;
-    display: block;
-    margin: 2em;
+    float: right;
+    margin-top: 6rem;
+    /* padding-left: 10rem; */
+    display: none;
+}
+
+h1 {
+    display: inline-block; /* Background less wide than nav */
+    font-size: 2rem;
+    background: #e5989b;
+    margin-bottom: 2rem;
+    padding: 1rem 5rem 1rem 1rem;
+    font-family: 'Poiret One';
+    width: auto;
+    text-align: left;
+    height: 7rem;
+}
+
+#searchbar {
+    height: 6rem;
+    background: #b5838d;
+}
+
+input[type="search"] {
+    width: calc(100% - 7rem);
+    border: none;
+    height: 4rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: #e5989b;
+    font-size: 1.5rem;
+    opacity: 1; /* Fix faded colour in Firefox */
+    box-sizing: border-box;
+    font-family: 'Muli';
+    transition: background 0.1s ease-in-out;
+}
+
+input[type="search"]::placeholder {
+    color: white;
+    opacity: 1; /* Fix faded colour in Firefox */
+}
+
+input[type="search"]:focus {
+    outline: none;
+    color: white;
+    background: #e7a2a5;
+    opacity: 1;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    top: 0.27rem;
+    margin-left: -0.4rem;
+    text-decoration: none;
+    background: #e5989b;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.1s ease-in-out, 
+                transform 0.1s ease;
+}
+
+button:hover,
+button:focus {
+    background: #ce888b;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#outer {
+    height: calc(100% - 17rem);
+}
+
+#dynamic {
+    background: #b5838d;
+    height: auto;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1rem;
+}
+
+nav img {
+    position: relative;
+    width: 2rem;
+    top: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+button img {
+    top: 0;
+    width: 2rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
 }
 
 svg {
     --scale: 2;
     --dragX: 0;
     --dragY: 0;
-    font-family: Arial, 'Hammersmith One';
-    font-size: 4.6px;
+    /* font-family: Arial, 'Hammersmith One'; */
+    font-size: 0.5rem;
     position: absolute;
     top: -9999px;
     bottom: -9999px;
@@ -55,6 +168,7 @@ svg {
     right: -9999px;
     margin: auto;
     transform: translate(var(--dragX), var(--dragY)) scale(var(--scale));
+    /* background-color: #ffcdb2; */
 }
 
 svg:hover {

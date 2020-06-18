@@ -8,9 +8,9 @@ app.use("/", express.static("static"));
 
 app.use("/", express.json());
 app.post("/", function (req, res) {
-    const responseObj = handler(req.body);
-    res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(responseObj));
+    handler(req.body).then(function (responseObj) {
+        res.json(responseObj);
+    });
 });
 
 app.listen(port, function () {

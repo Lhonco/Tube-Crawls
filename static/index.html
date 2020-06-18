@@ -12,17 +12,44 @@
 <body>
 
     <nav>
-        <h1>Menue</h1>
-        <p>Only functionality working so far is panning on map and highlighting different tube lines on hover, sorry ...</p>
-        <p>See proforma for full work in progress features.</p>
-        <label>Only show Tube lines</label>
-        <input type="checkbox" disabled></input>
+        <input id="zoom" type="range" min="0.5" max="4" step="0.001">
+        <h1>Tube<br>Crawls</h1>
+        <section id="outer">
+            <section id="searchbar">
+                <input id="search" type="search" placeholder="Enter Station">
+                <button><img src="./images/search.svg" width="20px" height="20px"></button>
+            </section>
+            <section id="dynamic">
+                <h2></h2>
+                <ul>
+                    <li><img src="./images/home.svg" width="30px" height="30px"></img>The Golden Swan</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
+                </ul>
+            </section>
+            <!-- <label>Only show Tube lines</label> -->
+            <!-- <input type="checkbox" disabled></input> -->
 
-        <p id="selected">Selected station: None</p>
+            <!-- <p id="selected">Selected station: None</p>
+            <p id="pub">Pub: None</p> -->
+        </section>
     </nav>
 
     <main draggable="true">
-        <input id="zoom" type="range" min="0.5" max="4" step="0.001">
         <svg id="status-map" version="1.1"
     xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1247.244px" height="907.087px" viewBox="64.094 122.25 985.889 657.072" enable-background="new 0 0 1247.244 907.087" xml:space="preserve">
     <g id="river">

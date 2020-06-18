@@ -4,10 +4,6 @@ const json = (response) => response.json();
 
 Ajax.query = function (requestObj) {
 
-    // return Promise.resolve({
-    //     "message": "It's a fake!"
-    // });
-
     return window.fetch("/", {
         "method": "POST",
         "body": JSON.stringify(requestObj),
