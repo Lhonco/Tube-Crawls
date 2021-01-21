@@ -22,6 +22,7 @@
     - [ ] Dial to speed up simulation
     - [ ] Information about how much money saved, which option to donate
     - [ ] Figure in the corner gets progressively more drunk
+    - [ ] Generate shopping list with link to online supermarket for each beer en route
 - [ ] Name Ideas
     - [ ] tubecrawler (.com not available)
     - [ ] thetubecrawler
