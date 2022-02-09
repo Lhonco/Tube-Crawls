@@ -47,7 +47,7 @@ GitHub Pages hosted site is only static front-end, server functions with JavaScr
 - [ ] Add different handlers depending on if just asking for one station or a cawl
 - [ ] Zoom option
 - [ ] Limit panning
-- [ ] Expand panning limit to allow selection in top left corner-->
+- [ ] Expand panning limit to allow selection in top left corner
 
 ## Progress
 - Defined brief and wrote README
@@ -58,4 +58,4 @@ GitHub Pages hosted site is only static front-end, server functions with JavaScr
 - scale 1, border 110/162,
 - scale 2, border 733/613, 623/450
 - scale 3, border 1355/1063, 622/450
-- scale 4, border 1980/1521, 625/458
+- scale 4, border 1980/1521, 625/458-->
