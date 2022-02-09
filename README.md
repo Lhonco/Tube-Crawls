@@ -1,6 +1,6 @@
 # Tube-Map
-
-## Features
+GitHub Pages hosted site is only static front-end, server functions with JavaScript promises were handled with node.js which can't be executed on GitHub Pages.
+<!--## Features
 - [ ] User can calculate different pub crawl routes with different options
     - [ ] Choose starting point
     - [ ] Duration
@@ -47,7 +47,7 @@
 - [ ] Add different handlers depending on if just asking for one station or a cawl
 - [ ] Zoom option
 - [ ] Limit panning
-- [ ] Expand panning limit to allow selection in top left corner
+- [ ] Expand panning limit to allow selection in top left corner-->
 
 ## Progress
 - Defined brief and wrote README
