@@ -54,6 +54,14 @@ h1 {
     height: 7rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
 #searchbar {
     height: 6rem;
     background: #b5838d;
@@ -86,7 +94,7 @@ input[type="search"]:focus {
     opacity: 1;
 }
 
-button {
+#submit {
     display: inline-block;
     position: relative;
     height: 4rem;
@@ -104,17 +112,50 @@ button {
                 transform 0.1s ease;
 }
 
-button:hover,
-button:focus {
+#submit:hover,
+#submit:focus {
     background: #ce888b;
 }
 
-button:focus {
+#submit:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
 
-button:active {
+#submit:active {
+    transform: scale(0.95);
+}
+
+#submit-edit {
+    display: inline-block;
+    position: relative;
+    height: 3rem;
+    border: none;
+    top: 0.27rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 3.8rem;
+    margin-top: 0.6rem;
+    text-decoration: none;
+    background: #e5989b;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.1s ease-in-out, 
+                transform 0.1s ease;
+}
+
+#submit-edit:hover,
+#submit-edit:focus {
+    background: #ce888b;
+}
+
+#submit-edit:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+#submit:active {
     transform: scale(0.95);
 }
 
@@ -122,12 +163,47 @@ button:active {
     height: calc(100% - 17rem);
 }
 
+#selected-station {
+    display: none;
+}
+
+#edit-station {
+    display: none;
+}
+
+input[type="text"] {
+    width: calc(100% - 7rem);
+    border: none;
+    height: 3rem;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    color: white;
+    background-color: #e5989b;
+    font-size: 1.5rem;
+    opacity: 1; /* Fix faded colour in Firefox */
+    box-sizing: border-box;
+    font-family: 'Muli';
+    transition: background 0.1s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+    opacity: 1; /* Fix faded colour in Firefox */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    color: white;
+    background: #e7a2a5;
+    opacity: 1;
+}
+
 #dynamic {
     background: #b5838d;
     height: auto;
     max-height: 100%;
     overflow: auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 nav img {
@@ -145,6 +221,7 @@ button img {
 
 nav ul {
     list-style-type: none;
+    padding-bottom: 1rem;
 }
 
 main {

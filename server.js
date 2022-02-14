@@ -4,7 +4,7 @@ import express from "express";
 const port = 80;
 const app = express();
 
-app.use("/", express.static("static"));
+app.use("/", express.static("docs"));
 
 app.use("/", express.json());
 app.post("/", function (req, res) {

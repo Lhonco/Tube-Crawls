@@ -17,29 +17,32 @@
         <section id="outer">
             <section id="searchbar">
                 <input id="search" type="search" placeholder="Enter Station">
-                <button><img src="./images/search.svg" width="20px" height="20px"></button>
+                <button id="submit"><img src="./images/search.svg" width="20px" height="20px"></button>
             </section>
             <section id="dynamic">
-                <h2></h2>
-                <ul>
-                    <li><img src="./images/home.svg" width="30px" height="30px"></img>The Golden Swan</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                    <li><img src="./images/beer.svg" width="30px" height="30px"></ion-icon>Fosters £3.50</li>
-                </ul>
+                <section id="selected-station">
+                    <h2></h2>
+                    <ul>
+                        <li><img src="./images/home.svg" width="30px" height="30px"></img><span id="pub"></span></li>
+                        <li><img src="./images/beer.svg" width="30px" height="30px"><span id="drink"></span></li>
+                        <li><img src="./images/cash.svg" width="30px" height="30px"><span id="price"></span></li>
+                    </ul>
+                </section>
+                <section id="edit-station">
+                    <ul>
+                        <li><img src="./images/home.svg" width="30px" height="30px"></img><input id="add-pub" type="text" placeholder="Enter Pub"></span></li>
+                        <li><img src="./images/beer.svg" width="30px" height="30px"><input id="add-drink" type="text" placeholder="Enter Drink"></span></li>
+                        <li><img src="./images/cash.svg" width="30px" height="30px"><input id="add-price" type="text" placeholder="Enter Price"></span></li>
+                        <li><button id="submit-edit">Submit</button></li>
+                    </ul>
+                </section>
+                <template id="crawl">
+                    <h3></h3>
+                    <ul>
+                        <li><img src="./images/home.svg" width="30px" height="30px"></img><span id="crawl-pub">The Golden Swan</span></li>
+                        <li><img src="./images/beer.svg" width="30px" height="30px"><span id="crawl-drink">Fosters £3.50</span></li>
+                    </ul>
+                </template>
             </section>
             <!-- <label>Only show Tube lines</label> -->
             <!-- <input type="checkbox" disabled></input> -->

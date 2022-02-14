@@ -1,5 +1,5 @@
-import map from "./map.js";
+import UI from "./ui.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-    map.init();
+    UI.init();
 });
