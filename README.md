@@ -4,6 +4,8 @@ An interactive app showing the nearest cheapest pint to each tube station inspir
 The GitHub Pages hosted site is only the static front-end, all server functions with JavaScript promises were handled with node.js which can't be executed on GitHub Pages. See demo video below to get an impression of the full functionality.
 
 ## Demo Video
+https://user-images.githubusercontent.com/5860469/153896308-5ab4e4e2-310f-4086-8cc0-4aa1ad1b0e89.mov
+
 <!--## Features
 - [ ] User can calculate different pub crawl routes with different options
     - [ ] Choose starting point
