@@ -1,5 +1,9 @@
 # Tube-Map
-GitHub Pages hosted site is only static front-end, server functions with JavaScript promises were handled with node.js which can't be executed on GitHub Pages.
+An interactive app showing the nearest cheapest pint to each tube station inspired by this [blog post](https://store.storekit.com/advice/map-of-london-underground-by-the-cheapest-pint/) by Adam Stead. Easily upgradeable when the tube network changes, as it's built on top of the official TfL tube map svg available on their [website](https://tfl.gov.uk/Modules/TubeMap?nightMode=false).
+
+The GitHub Pages hosted site is only the static front-end, all server functions with JavaScript promises were handled with node.js which can't be executed on GitHub Pages. See demo video below to get an impression of the full functionality.
+
+## Demo Video
 <!--## Features
 - [ ] User can calculate different pub crawl routes with different options
     - [ ] Choose starting point
